@@ -12,6 +12,7 @@ import Portfolio from "./components/Portfolio";
 import LinksPage from "./components/LinksPage";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
+import ReactDOM from "react-dom/client";
 
 function App() {
   const [count, setCount] = useState(0);
