@@ -18,7 +18,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Router basename="/kcano162">
+    <Router basename="/my-website/">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
