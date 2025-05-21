@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const [hoveredIndex, setHoveredIndex] = useState(false);
-  reverse();
 
   const iconData = [
     { icon: "fa-child", label: "About", path: "/about" },
