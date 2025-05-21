@@ -20,7 +20,7 @@ function App() {
   return (
     <Router basename="/my-website/">
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/links" element={<LinksPage />} />
         <Route path="/portfolio" element={<Portfolio />} />
