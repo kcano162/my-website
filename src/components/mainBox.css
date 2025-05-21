@@ -1,0 +1,98 @@
+
+:host, :root{
+    --font-body: "Zen Kaku Gothic New", "sans-serif";
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: "Roboto Mono Variable", "monospace";
+    --edges: 20px 20px 0px 0px;
+    --main-font-color: #1e1c19;
+    --main-font-color-lighter: #adb976;
+    --window-background-color:  #faffeb;
+    --window-width: 550px;
+    --window-height: 425px;
+    --window-top-height: 40px;
+    --letter-space: 1px;
+}
+
+body {
+font-family: var(--font-sans)
+}
+
+.main {
+    display: grid;
+    grid-template-rows: auto;
+    letter-spacing: var(--letter-space);
+    width: var(--window-width);
+    height: var(--window-height);
+    background-color: var(--window-background-color);
+    border-radius: 25px;
+    border: solid 1px var(--main-font-color-lighter);
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: auto ;
+    width: var(--window-width);
+    height: var(--window-top-height);
+    background-color: var(--main-font-color);
+    border-radius: var(--edges);
+}
+
+.close{
+    grid-column: 4 / 5;
+    justify-self: end;
+    padding-right: 8%;
+}
+
+h1 { 
+    color: #e27948;
+    font-weight: 700;
+}
+
+.top-bar h4, .top-bar a {
+    grid-row: 1/2;
+    color: var(--window-background-color);
+    margin: 8px 0px 0px 20px;
+    text-align: left ;
+
+
+}
+
+
+.home-title p{
+    margin: -20px auto 40px auto;
+}
+
+span .fa{
+    color: #1e1c19;
+    display: block;
+    padding: 0px 25px 0px 25px;
+    font-size: 40px;
+}
+
+
+.icon-links span{ 
+    display: inline-block;
+    font-weight: normal;
+
+
+}
+
+.enlarged {
+     transform: scale(1.1);
+    transition: transform .3s;
+}
+
+.content a:visited {
+    color: var(--main-font-color);
+    background-color: #1e1c19;
+
+}
+
+ a:hover, .link-nav:hover, .close:hover {
+    cursor: pointer;
+    text-decoration: none;
+color: #648356;
+    background-color: transparent;
+    text-decoration: none;
+}
+
